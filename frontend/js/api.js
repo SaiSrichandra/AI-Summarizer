@@ -1,4 +1,4 @@
-const API_BASE = "https://ai-summarizer-3j8a.onrender.com";
+const API_BASE = "https://ai-summarizer-3j8a.onrender.com/api";
 
 function saveToken(token) {
   localStorage.setItem("token", token);
