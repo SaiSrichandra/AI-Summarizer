@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy>=2.0
+asyncpg
+passlib[bcrypt]
+python-jose[cryptography]
+python-dotenv
+pydantic
+seleniumbase
+requests
+beautifulsoup4
+openai
+aiofiles
+pydantic-settings

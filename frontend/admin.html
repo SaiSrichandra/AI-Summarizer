@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <script src="/static/js/api.js"></script>
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div>
+  <h1>All User Summaries</h1>
+  <ul id="all-summaries"></ul>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    fetchAllSummaries();
+  </script>
+  </div>
+</body>
+</html>

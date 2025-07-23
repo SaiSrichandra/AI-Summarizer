@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Summarizer - Login/Register</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Summarizer</h1>
+
+    <!-- Login Form -->
+    <form id="login-form" onsubmit="handleLogin(event)">
+      <h2>Login</h2>
+      <input id="login-username" placeholder="Username" required />
+      <input id="login-password" type="password" placeholder="Password" required />
+      <button class="primary-action" type="submit">Login</button>
+
+      <div class="switch-row">
+        <span>Don’t have an account?</span>
+        <button class="link-button" type="button" onclick="toggleForm('register')">Register</button>
+      </div>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register-form" style="display: none;" onsubmit="handleRegister(event)">
+      <h2>Register</h2>
+      <input id="reg-username" placeholder="Username" required />
+      <input id="reg-email" type="email" placeholder="Email" required />
+      <input id="reg-password" type="password" placeholder="Password" required />
+      <button class="primary-action" type="submit">Register</button>
+
+      <div class="switch-row">
+        <span>Already have an account?</span>
+        <button class="link-button" type="button" onclick="toggleForm('login')">Login</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/static/js/api.js"></script>
+</body>
+</html>

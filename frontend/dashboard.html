@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard</title>
+  <script src="/static/js/api.js"></script>
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p style="text-align:center;">Summarizing, please wait...</p>
+    </div>
+    <h1>AI Article Summarizer</h1>
+
+    <input id="article-url" placeholder="Paste article URL here">
+    <button onclick="submitSummary()">Summarize</button>
+
+    <h2>Summary</h2>
+    <pre id="summary-output"></pre>
+
+    <h2>History</h2>
+    <ul id="summary-history"></ul>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="/static/js/api.js"></script>
+  <script>
+    fetchMySummaries();
+  </script>
+</body>
+</html>
