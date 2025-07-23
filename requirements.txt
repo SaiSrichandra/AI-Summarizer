@@ -13,3 +13,5 @@ openai
 aiofiles
 pydantic-settings
 pydantic[email]
+asyncpg
+psycopg2
