@@ -12,3 +12,4 @@ beautifulsoup4
 openai
 aiofiles
 pydantic-settings
+pydantic[email]
