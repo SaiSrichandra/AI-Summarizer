@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ai-summarizer
+    env: docker
+    plan: free
+    autoDeploy: true

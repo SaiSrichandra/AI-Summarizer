@@ -16,3 +16,5 @@ pydantic[email]
 asyncpg
 psycopg2
 python-multipart
+selenium
+undetected-chromedriver
